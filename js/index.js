@@ -65,6 +65,15 @@ const nav1 = document.getElementsByTagName('a');
 for(let i=0; i < nav1.length; i += 1){
   nav1[i].style.color = 'green';
 }
+const newNav = document.createElement('a');
+newNav.textContent = "Blog";
+document.querySelector('nav').appendChild(newNav).style.color = "green"
+
+const newNav1 = document.createElement('a');
+newNav1.textContent = "Home";
+document.querySelector('nav').prepend(newNav1)
+newNav1.style.color = "green"
+
   
 //images
 
