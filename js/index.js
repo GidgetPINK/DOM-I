@@ -134,7 +134,7 @@ const contactInfo = document.querySelector('.contact > h4');
 contactInfo.textContent ="Contact"
 
 const ContactSec1 = document.querySelectorAll('.contact > p');
-ContactSec1[0].innerHTML ="Contact123 Way 456 Street<br>Somewhere, USA"
+ContactSec1[0].innerHTML ="123 Way 456 Street<br>Somewhere, USA"
 
 const ContactSec2 = document.querySelectorAll('.contact > p');
 ContactSec2[1].textContent ="1 (888) 888-8888"
