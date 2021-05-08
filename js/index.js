@@ -43,48 +43,41 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])*/
 
 //navbar
 
-const navBar = document.querySelectorAll('nav > a');
-navBar[0].textContent = "Services"
+const navBarLinks = document.querySelectorAll('nav > a');
+navBarLinks[0].textContent = "Services"
+navBarLinks[1].textContent = "Product"
+navBarLinks[2].textContent = "Vision"
+navBarLinks[3].textContent = "Features"
+navBarLinks[4].textContent = "About"
+navBarLinks[5].textContent = "Contact"
 
-const navBar1 = document.querySelectorAll('nav > a');
-navBar[1].textContent = "Product"
+for(let i=0; i < navBarLinks.length; i += 1){
+    navBarLinks[i].style.color = 'green';
+};
 
-const navBar2 = document.querySelectorAll('nav > a');
-navBar[2].textContent = "Vision"
 
-const navBar3 = document.querySelectorAll('nav > a');
-navBar[3].textContent = "Features"
 
-const navBar4 = document.querySelectorAll('nav > a');
-navBar[4].textContent = "About"
 
-const navBar5 = document.querySelectorAll('nav > a');
-navBar[5].textContent = "Contact"
-
-const nav1 = document.getElementsByTagName('a');
-for(let i=0; i < nav1.length; i += 1){
-  nav1[i].style.color = 'green';
-}
 const newNav = document.createElement('a');
 newNav.textContent = "Blog";
 document.querySelector('nav').appendChild(newNav).style.color = "green"
 
-const newNav1 = document.createElement('a');
-newNav1.textContent = "Home";
-document.querySelector('nav').prepend(newNav1)
-newNav1.style.color = "green"
+const newNavLink = document.createElement('a');
+newNavLink.textContent = "Home";
+document.querySelector('nav').prepend(newNavLink)
+newNavLink.style.color = "green"
 
   
 //images
 
-const image = document.querySelector('#logo-img');
-image.src = "img/logo.png"
+const logoImg = document.querySelector('#logo-img');
+logoImg.src = "img/logo.png"
 
-const image2 = document.querySelector('#cta-img');
-image2.src = "img/header-img.png"
+const ctaImg = document.querySelector('#cta-img');
+ctaImg.src = "img/header-img.png"
 
-const image3 = document.querySelector('#middle-img');
-image3.src = "img/mid-page-accent.jpg"
+const midImg = document.querySelector('#middle-img');
+midImg.src = "img/mid-page-accent.jpg"
 
 const title =document.querySelector('h1');
 title.innerHTML = "Dom<br> is<br> Awesome"
@@ -145,4 +138,4 @@ ContactSec3[2].textContent ="sales@greatidea.io"
 //footer info
 
 const footerSec = document.querySelector('footer > p');
-footerSec.textContent ="Copyright Great Idea! 2018"
+footerSec.textContent = siteContent.footer.copyright
